@@ -14,19 +14,18 @@ Padronizar o processo de **digitalização e anexação de documentos**, facilit
 
 ```mermaid
 flowchart TD
-    A[Início] --> B[Colocar documentos na parte superior da impressora]
-    B --> C[Abrir o aplicativo "X" na Área de Trabalho]
-    C --> D[Clicar em "Digitalizar"]
-    D --> E{Todos os documentos\nforam digitalizados?}
-    E -- Não --> D
-    E -- Sim --> F[Clicar em "Salvar PDF"]
-    F --> G[Definir nome do arquivo e salvar]
-    G --> H[Fechar o aplicativo "X"]
-    H --> I[Abrir o sistema TASY]
-    I --> J[Na árvore do PEP, acessar\nGestão Eletrônica de Documentos - GED]
-    J --> K[Sistema direciona automaticamente\npara o PEP/GED]
-    K --> L[Clicar no botão "Adicionar"]
-    L --> M[Clicar em "Selecionar Arquivo"]
-    M --> N[Selecionar o PDF salvo anteriormente]
-    N --> O[Salvar]
-    O --> P[Documento anexado com sucesso]
+    A[Inicio] --> B[Colocar documentos na impressora]
+    B --> C[Abrir aplicativo X no computador]
+    C --> D[Clicar em Digitalizar]
+    D --> E{Documentos digitalizados?}
+    E -- Nao --> D
+    E -- Sim --> F[Salvar em PDF]
+    F --> G[Definir nome do arquivo]
+    G --> H[Fechar aplicativo X]
+    H --> I[Abrir sistema TASY]
+    I --> J[Acessar GED na arvore do PEP]
+    J --> K[Abrir tela do PEP GED]
+    K --> L[Clicar em Adicionar]
+    L --> M[Selecionar arquivo PDF]
+    M --> N[Salvar documento]
+    N --> O[Documento anexado]
